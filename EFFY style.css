@@ -1,0 +1,668 @@
+
+/*GENERIC STYLES*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+}
+
+
+.bold {
+	font-weight: 700;
+}
+
+
+ul {
+	list-style: none;
+}
+
+.lato-bold {
+	font-weight: 400;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none; 
+	color: white;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/*STYLING FOR HOMEPAGE*/
+.homepage {
+	
+/*	background-color: #BDEC8E;*/
+	background-color: #00E68A;
+/*	background-color: #1DDE73;*/
+	/*font-family: "VT323", sans-serif;
+	font-family: "Dosis", sans-serif;*/
+
+
+}
+
+.homepage .wrapper {
+	width: 100%;
+	height: 100vh;
+	font-size: 65px;
+	text-transform: uppercase;
+/*	border: 15px solid rgba(0,0,0,.65);*/
+	
+}
+
+
+.homepage header {
+	width: 1225px;
+	height: 50px;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+
+
+	text-transform: none;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+
+	/*background: rgba(255, 255, 0, .9);*/
+}
+
+.homepage .small-logo {
+	position: absolute;
+	left: 25px;
+	bottom: 25px;
+	width: 200px;
+	height: 100px;
+	display: none;
+}
+
+.homepage .effy, .homepage .year {
+	font-size: 100px;
+	line-height: 100px;
+	letter-spacing: 6px;
+	font-weight: 700;
+	text-align: right;
+	position: absolute;
+	color: black;
+}
+
+.homepage .logo {
+	width: 780px;
+	height: 415px;
+	position: relative;
+	margin: 0px auto;
+	top: 140px;
+}
+
+.homepage .main-year, .homepage .main-effy {
+	font-size: 400px;
+	position: absolute;
+	/*left: 0px;
+	top: 0px;*/
+	line-height: 400px;
+	color: black;
+}
+
+
+.homepage .effy, .homepage .main-effy {
+	opacity: .8;
+}
+
+.homepage .main-effy {
+	margin-left: 20px;
+}
+
+.homepage .year, .homepage .main-year {
+	opacity: .7;
+
+}
+
+.homepage .full-title {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+	/*letter-spacing: 10px;*/
+	text-transform: none;
+
+
+}
+
+.homepage .triangle {
+	width: 0px;
+	height: 0px;
+	border-top: 42px solid transparent;
+	border-bottom: 42px solid transparent;
+	border-left: 42px solid black;
+	opacity: .8;
+
+	position: absolute;
+	left: 240px;
+	bottom: 33px;
+}
+
+
+
+.homepage .main-links a{
+	position: relative;
+	top: 40px;
+	left: 25px;
+	font-size: 70px;
+	font-weight: 700;
+	width: 600px;
+	color: black;
+}
+
+.homepage .festival-dates {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+/*	width: 215px;*/
+	text-align: right;
+	opacity: .7;
+}
+
+
+
+.homepage nav {
+	text-transform: none;
+	width: 500px;
+	position: relative;
+	top: 0px;
+	margin: 0px auto;
+/*	border-left: 2px solid black;*/
+	text-align: left;
+	font-family: "Roboto Condensed", sans-serif;
+
+}
+
+.homepage nav ul {
+/*	line-height: 0px;*/
+	overflow: hidden;
+}
+
+
+.homepage nav li {
+	float: left;
+	margin-left: 20px;
+	color: black;
+
+/*	line-height: 0px;*/
+	font-weight: 400;
+	cursor: pointer;
+	opacity: .6;
+	-webkit-transition: opacity .22s; /* Safari */
+    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
+
+
+}
+
+.homepage nav li:hover, .homepage .my-list-link:hover {
+	opacity: 1;
+}
+
+.homepage .my-list-link {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-weight: 400;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	opacity: .8;
+
+	-webkit-transition: opacity .22s; /* Safari */
+    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+
+.homepage .white {
+	color: white;
+	opacity: .8;
+}
+
+
+
+.homepage .about {
+	font-family: "Open Sans Condensed", sans-serif;
+	text-transform: none;
+	width: 700px;
+
+	position: absolute;
+	left: 15px;
+	font-size: 20px;
+	top: 200px;
+}
+
+
+
+
+/*STYLING FOR FILM PAGES*/
+
+.film-page .header {
+	width: 1250px;
+
+/*	margin-left: 60px;*/
+	margin-top: 5px;
+	text-align: right;
+	padding-right: 20px;
+	
+}
+
+.film-page .header h2 {
+
+	font-weight: 300;
+	color: #00E68A;
+}
+
+.film-page .date{
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.film-page .location, .film-page .search {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.film-page .location {
+	margin-bottom: 10px;
+}
+
+.film-page .search {
+	text-transform: lowercase;
+}
+
+.film-page .checkbox {
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	line-height: 17px;
+	color: #00E68A;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	right: 20px;
+	bottom: 45px;
+	border: 2px solid #00E68A;
+	padding-left: 4px;
+	cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1); background-color: transparent; border: 2px solid #00E68A;}
+  100%{transform: scale(1.3); background-color: white; border: 2px solid white;}
+
+}
+
+@-webkit-keyframes pulse {
+	0% {-webkit-transform: scale(1); background-color: transparent; border: 2px solid #00E68A;}
+  	100%{-webkit-transform: scale(1.3); background-color: white; border: 2px solid white;}
+}
+
+.film-page .checkbox-info-pop-up {
+	font-family: "Lato", sans-serif;
+	font-size: 13.3px;
+	font-weight: 300;
+	width: 330px;
+	background-color: black;
+	color: #FF9900;
+	padding: 10px;
+	position: absolute;
+	bottom: 35px;
+	right: 65px;
+	border-radius: 15px;
+	display: none;
+
+}
+
+.film-page .checkbox-info-pop-up::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 330px;
+	bottom: 13px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 12px solid black;
+}
+
+
+.film-page .film-nav {
+	text-align: left;
+	padding-left: 60px;
+}
+
+
+.film-page .home {
+	width: 20px;
+	height: 20px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 16px solid #00E68A; 
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 6px;
+
+	/*position: absolute;
+	left: 20px;*/
+/*
+	width: 100px;
+	font-family: "Oswald", sans-serif;
+	font-size: 18px;
+	letter-spacing: 4px;
+	line-height: 27px;
+	color: #2A2A2A;
+	font-weight: 400;
+	position: relative;
+	margin: 0px auto;
+	top: 2px;*/
+	
+}
+
+/*.film-page nav {
+	width: 20px;
+	position: absolute;
+	font-weight: 300;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding-bottom: 36px;
+
+}*/
+
+.film-page nav {
+	width: 30px;
+	height: 635px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	/*background: black;*/
+}
+
+.film-page nav ul {
+	display: none;
+}
+
+.film-page nav li {
+	display: inline-block;
+	margin-left: 9px;
+}
+
+.film-page nav a {
+	color: #00E68A;
+	text-transform: uppercase;
+}
+
+/*.film-page nav:hover {
+	width: 500px;
+}*/
+
+.film-page nav:hover > ul {
+	display: inline-block;
+}
+
+
+.film-page .options-bar {
+	background-color: black;
+	opacity: .5;
+	width: 1260px;
+	height: 33px;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	text-align: center;
+	padding-top: 5px;
+	z-index: 100;
+	color: white;
+	
+}
+
+.film-page .options-bar p {
+	display: inline;
+	position: absolute;
+	cursor: pointer;
+}
+
+.film-page .options-bar p:first-child {
+	left: 90px;
+}
+
+.film-page .options-bar p:last-child {
+	right: 90px;
+}
+
+
+.film-page .photo-header {
+	width: 1250px;
+	/*height: 350px;*/
+	height: 635px;
+
+
+	position: relative;
+	top: 15px;
+	margin: 0px auto;
+/*	margin-bottom: 15px;
+	margin-top: 15px;*/
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+
+    padding-top: 10px;
+}
+
+
+
+.film-page .photo-header h1 {
+	/*display: inline-block;
+  	vertical-align: middle;*/
+  	letter-spacing: 8px;
+  	display: inline;
+}
+
+.film-page .title-header {
+	width: 600px;
+	position: relative;
+	margin: 0px auto;
+
+}
+
+/*.title-header:before {
+	content: '';
+  	display: inline-block;
+  	height: 100%;
+  	vertical-align: middle;
+}*/
+
+.film-page .main-title {
+	text-transform: uppercase;
+	color: white;
+	font-size: 40px;
+	font-weight: 300;
+
+	margin-bottom: 30px;
+}
+
+.film-page .arrow {
+	font-size: 25px;
+	color: #00E68A;
+	line-height: 20px;
+}
+
+.film-page #search-circle {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #00E68A;
+	display: inline-block;
+	cursor: pointer;
+	margin-bottom: 3px;
+}
+
+.film-page .film-search-box {
+	width: 500px;
+	height: 635px;
+	background-color: rgba(0,0,0,.85);
+	z-index: 200;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	font-size: 15px;
+	font-weight: 300;
+	display: none;
+}
+
+.film-page .film-search-box .left, .film-page .film-search-box .right {
+	float: left; 
+	margin-left: 68px;
+	margin-top: 80px;
+}
+
+.film-page .film-search-box p {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.film-page .film-search-box li {
+	margin-bottom: 5px;
+}
+
+
+.film-page .x {
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	padding-left: 3px;
+	line-height: 12px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid white;
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.film-page .main {
+	position: absolute;
+	bottom: 35px;
+	left: 10px;
+	z-index: 100;
+	height: 470px;
+	width: 500px;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.film-page .text p{
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size: 13.5px;
+	color: white;
+	line-height: 20px;
+	letter-spacing: .5px;
+}
+
+.film-page .second-film {
+	margin-top: 30px;
+}
+
+.film-page .film-info {
+	font-size: 13px;
+	letter-spacing: 1px;
+	border: 2px solid white;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 1px 5px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+
+
+/*STYLING FOR SPECIFIC FILMS*/
+#deeptime{
+	background-color: #00E68A;
+}
+
+#deeptime .photo-header {
+	background: url("Deep Time.png");
+	background-repeat: no-repeat;
+    background-position: center bottom; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
