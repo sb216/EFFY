@@ -6,11 +6,19 @@ $(document).ready(function(){
 	var checked = false; 
 	var t; 
 
-	$(".homepage nav li, .homepage .my-list-link").click(function() {
-		$(".logo").fadeOut(1000);
-		$(".small-logo").delay(1500).fadeIn("slow");
+
+	//On homepage, delay redirect when links are clicked until large logo fades out 
+	$(".homepage nav li a, .homepage .my-list-link a").click(function() {
+		var href = $(this).attr('href');
+		$(".logo").delay(200).fadeOut(1000, function() {
+			window.location = href;
+		})
+		return false;
 	});
 
+
+	// $(".small-logo").delay(500).fadeIn(800);
+	// $(".films-list").delay(500).fadeIn(800);
 
 
 

@@ -53,12 +53,14 @@ a {
 }
 
 
-
-/*STYLING FOR HOMEPAGE*/
-.homepage {
+/***************************************************************/
+/***************SKELETON STYLING FOR BASE PAGES*****************/
+/***************************************************************/
+body {
 	
 /*	background-color: #BDEC8E;*/
 	background-color: #00E68A;
+/*	background-color: #64A898;*/
 /*	background-color: #1DDE73;*/
 	/*font-family: "VT323", sans-serif;
 	font-family: "Dosis", sans-serif;*/
@@ -66,7 +68,7 @@ a {
 
 }
 
-.homepage .wrapper {
+.wrapper {
 	width: 100%;
 	height: 100vh;
 	font-size: 65px;
@@ -76,11 +78,11 @@ a {
 }
 
 
-.homepage header {
+header {
 	width: 1225px;
-	height: 50px;
-	position: absolute;
-	left: 25px;
+	height: 30px;
+	position: relative;
+	margin: 0px auto;
 	top: 25px;
 
 
@@ -89,31 +91,104 @@ a {
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 1.5px;
-
+	letter-spacing: .5px;
 	/*background: rgba(255, 255, 0, .9);*/
 }
 
-.homepage .small-logo {
-	position: absolute;
+.main-links a{
+	position: relative;
+	top: 40px;
 	left: 25px;
-	bottom: 25px;
-	width: 200px;
-	height: 100px;
-	display: none;
-}
-
-.homepage .effy, .homepage .year {
-	font-size: 100px;
-	line-height: 100px;
-	letter-spacing: 6px;
+	font-size: 70px;
 	font-weight: 700;
-	text-align: right;
-	position: absolute;
+	width: 600px;
 	color: black;
 }
 
+.festival-dates {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+/*	width: 215px;*/
+	text-align: right;
+/*	opacity: .8;*/
+}
+
+
+
+nav {
+	text-transform: none;
+	width: 490px;
+	position: relative;
+	top: 0px;
+	margin: 0px auto;
+/*	border-left: 2px solid black;*/
+	text-align: left;
+	font-family: "Roboto Condensed", sans-serif;
+
+}
+
+nav ul {
+/*	line-height: 0px;*/
+	overflow: hidden;
+}
+
+
+nav li {
+	float: left;
+	margin-left: 20px;
+
+/*	line-height: 0px;*/
+	cursor: pointer;
+	/*padding-left: 8px;
+	padding-right: 6px;*/
+
+
+}
+
+nav a {
+	opacity: .7;
+	font-weight: 400;
+	color: black;
+	-webkit-transition: opacity .22s; /* Safari */
+    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+nav a:hover, .my-list-link:hover {
+	opacity: 1;
+}
+
+.my-list-link {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-weight: 400;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	opacity: .8;
+
+	-webkit-transition: opacity .22s; /* Safari */
+    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+
+.white {
+	color: white;
+	opacity: .8;
+}
+
+
+
+
+
+
+/***************************************************************/
+/*****************STYLING FOR OPENING HOMEPAGE******************/
+/***************************************************************/
+
+
 .homepage .logo {
-	width: 780px;
+	width: 765px;
 	height: 415px;
 	position: relative;
 	margin: 0px auto;
@@ -127,21 +202,13 @@ a {
 	top: 0px;*/
 	line-height: 400px;
 	color: black;
-}
-
-
-.homepage .effy, .homepage .main-effy {
-	opacity: .8;
+	letter-spacing: -5px;
 }
 
 .homepage .main-effy {
 	margin-left: 20px;
 }
 
-.homepage .year, .homepage .main-year {
-	opacity: .7;
-
-}
 
 .homepage .full-title {
 	font-family: "Roboto Condensed", sans-serif;
@@ -170,87 +237,6 @@ a {
 	bottom: 33px;
 }
 
-
-
-.homepage .main-links a{
-	position: relative;
-	top: 40px;
-	left: 25px;
-	font-size: 70px;
-	font-weight: 700;
-	width: 600px;
-	color: black;
-}
-
-.homepage .festival-dates {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-/*	width: 215px;*/
-	text-align: right;
-	opacity: .7;
-}
-
-
-
-.homepage nav {
-	text-transform: none;
-	width: 500px;
-	position: relative;
-	top: 0px;
-	margin: 0px auto;
-/*	border-left: 2px solid black;*/
-	text-align: left;
-	font-family: "Roboto Condensed", sans-serif;
-
-}
-
-.homepage nav ul {
-/*	line-height: 0px;*/
-	overflow: hidden;
-}
-
-
-.homepage nav li {
-	float: left;
-	margin-left: 20px;
-	color: black;
-
-/*	line-height: 0px;*/
-	font-weight: 400;
-	cursor: pointer;
-	opacity: .6;
-	-webkit-transition: opacity .22s; /* Safari */
-    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
-
-
-}
-
-.homepage nav li:hover, .homepage .my-list-link:hover {
-	opacity: 1;
-}
-
-.homepage .my-list-link {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	font-weight: 400;
-	cursor: pointer;
-	letter-spacing: 1.5px;
-	opacity: .8;
-
-	-webkit-transition: opacity .22s; /* Safari */
-    transition: opacity .22s cubic-bezier(0.25,0.1,0.25,1);
-}
-
-
-.homepage .white {
-	color: white;
-	opacity: .8;
-}
-
-
-
 .homepage .about {
 	font-family: "Open Sans Condensed", sans-serif;
 	text-transform: none;
@@ -264,8 +250,158 @@ a {
 
 
 
+/***************************************************************/
+/*****************STYLING FOR FILMS HOMEPAGE******************/
+/***************************************************************/
 
-/*STYLING FOR FILM PAGES*/
+
+.films-homepage .small-logo {
+	position: absolute;
+	left: 25px;
+	bottom: 0px;
+	width: 200px;
+	height: 100px;
+/*	display: none;*/
+}
+
+.films-homepage .effy, .films-homepage .year {
+	font-size: 80px;
+	line-height: 80px;
+	font-weight: 700;
+	letter-spacing: -4px;
+/*	text-align: right;*/
+	position: absolute;
+	color: black;
+}
+
+
+.films-homepage .year, .homepage .main-year {
+	opacity: .7;
+
+}
+
+
+.films-homepage .effy, .homepage .main-effy {
+	opacity: .8;
+	margin-left: 3px;
+}
+
+.films-homepage #films {
+	/*background-color: rgba(0,0,0,.7);*/
+	border-bottom: 2px solid white;
+}
+
+.films-homepage #films a {
+		opacity: 1;
+}
+
+.films-homepage .films-list {
+	width: 1225px;
+	height: 475px;
+
+	position: relative;
+	margin: 0px auto;
+	top: 40px;
+	padding-top: 20px;
+
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: .5px;
+	text-transform: none;
+/*	background-color: rgba(0,0,0,.8);*/
+/*	color: white;*/
+/*	display: none;*/
+
+}
+
+.films-homepage .row {
+	width: 1225px;
+	height: 36px;
+/*	text-align: left;*/
+/*	text-align: justify;*/
+/*	float: left;*/
+
+}
+
+/*.films-homepage .row:after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+}*/
+
+.films-homepage .row .time {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	position: absolute;
+	text-align: right;
+	right: 870px;
+}
+
+.films-homepage .row p, .films-homepage .row a {
+	display: inline;
+
+}
+
+
+.films-homepage .row .film {
+	left: 367px;
+	color: white;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	padding: 6px 20px;
+
+
+/*	text-transform: uppercase;*/
+/*	font-family: "Oswald", sans-serif;*/
+
+
+
+	-webkit-transition: background-color .22s; /* Safari */
+    transition: background-color .22s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.films-homepage .row .film:hover {
+	background-color: rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************/
+/*****************STYLING FOR INDIVIDUAL FILMS ******************/
+/***************************************************************/
 
 .film-page .header {
 	width: 1250px;
