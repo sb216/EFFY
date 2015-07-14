@@ -7,11 +7,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700italic,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,600,300,200,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 	<link href="EFFY style.css" rel='stylesheet' type='text/css'>
 </head> 
@@ -21,90 +22,121 @@
 
 	<div class = "wrapper"> 
 
+		<div class = "small-logo"> 
+			<a href = "index.html" class = "year no-select"> 2015</a> 
+			<a href = "index.html" class = "effy no-select"> EFFY</a>
+		</div> 
+
 		<header> 
 
 			<p class = "festival-dates"> April 3 &mdash; April 11, 2015 </p> 
 
 			<nav> 
 				<ul>	
-					<li id = "films"> <a href = "EFFY Films homepage.html" class = "white"> Films </a> </li>
+					<li id = "current"> <a href = "EFFY Films homepage.html" class = "white"> Films </a> </li>
 					<li> <a href = "" class = "white"> Events </a> </li>
-					<li> <a href= "" class = "small"> Who We Are </a></li>
-					<li> <a href = "" class = "small"> Submit a Film </a> </li>
-					<li> <a href = "" class = "small"> Contact Us </a> </li>
+					<li> <a href= ""> Who We Are </a></li>
+					<li> <a href = ""> Submit a Film </a> </li>
+					<li> <a href = ""> Contact Us </a> </li>
 				</ul>
 			</nav>
 
-			<a class = "my-list-link white"> My List </a>
+			<a href = "EFFY list.html" class = "my-list-link white"> My List </a>
 		</header>
 
-		<div class = "small-logo"> 
-			<h1 class = "year no-select"> 2015</h1> 
-			<h1 class = "effy no-select"> EFFY</h1>
-		</div> 
-
+		<h2 class = "section-title">Films </h2> 
+<!-- 		<div class = "box"> </div> -->
 			
 		<section class = "films-list"> 
+
 			<div class = "row">
-				<p class = "time"> Friday, April 3 / 8pm </p>
-				<a class = "film" href = ""> Deep Time, with Broken Landscape </a> 
-<!-- 				<p class = "location"> Zhang Auditorium, Evans Hall, 165 Whitney Avenue </p> -->
+				<p class = "time"> 4/3 <!-- at 8pm  --></p>
+				<div class = "film"> 
+					<a href = "Deeptime.html"> <span class = "rob-bold"> 8pm / </span> <span class = "film-title"> Deep Time</span>, <span class = "with"> with </span> <span class = "film-title"> Broken Landscape </span> </a> 
+					<div class = "checkbox" id = "deeptime"> </div> 
+				</div>
+					<!-- 				<p class = "location"> Zhang Auditorium, Evans Hall, 165 Whitney Avenue </p> -->
 			</div> 
 			<div class = "row">
-				<p class = "time"> Saturday, April 4 / 4pm </p>
-				<a class = "film" href = ""> Wrenched, with Attack of the Killer Trees </a>
+				<p class = "time"> 4/4 <!-- at 4pm --> </p>
+				<div class = "film"> 
+					<a href = ""> <span class = "rob-bold"> 4pm /  </span> <span class = "film-title"> Wrenched</span>, <span class = "with"> with </span>  <span class = "film-title"> Attack of the Killer Trees </span> </a>
+					<div class = "checkbox" id = "wrenched"> </div> 
+				</div> 
+				<div class = "second film">
+					<a href = ""> <span class = "rob-bold"> 8pm /  </span> <span class = "film-title"> The Chinese Mayor</span>, <span class = "with"> with </span>  <span class = "film-title"> XBoundary </span></a> 
+					<div class = "checkbox" id = "chinese-mayor"> </div> 
+				</div> 
 <!-- 				<p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>  
+
 			<div class = "row">
-				<p class = "time"> Saturday, April 4 / 8pm </p>
-				<a class = "film" href = ""> The Chinese Mayor, with XBoundary </a> 
+				<p class = "time"> 4/5 <!-- at 2pm --> </p>
+				<div class = "film"> 
+					<a href = ""> <span class = "rob-bold"> 2pm /  </span> <span class = "film-title"> Shorts Program </span> </a>
+					<div class = "checkbox" id = "shorts"> </div> 
+				</div> 
 <!-- 				<p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>
+		
 			<div class = "row">
-				<p class = "time"> Sunday, April 5 / 2pm </p>
-				<a class = "film" href = ""> Shorts Program </a> 
-<!-- 				<p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
-			</div>
-			<div class = "row">
-				<p class = "time"> Saturday, April 4 / 8pm </p>
-				<a class = "film" href = ""> The Chinese Mayor, with XBoundary </a>
-<!-- 				<p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
-			</div>
-			<div class = "row">
-				<p class = "time"> Monday, April 6 / 7pm </p>
-				<a class = "film" href = "">Thuletuvalu, with The Ballad of Holland House </a> 
+				<p class = "time"> 4/6 <!-- at 7pm --> </p>
+				<div class = "film"> 
+					<a href = ""><span class = "rob-bold"> 7pm /  </span> <span class = "film-title"> Thuletuvalu</span>, <span class = "with"> with </span>  <span class = "film-title">The Ballad of Holland House</span> </a> 
+					<div class = "checkbox" id = "thuletuvalu"> </div>  
+				</div> 
 				<!-- <p class = "location"> Loria Center for the History of Art, Room 250, 190 York Street </p> -->
 			</div>
 			<div class = "row">
-				<p class = "time"> Tuesday, April 7 / 7pm </p>
-				<a class = "film" href = ""> Inhabit: A Permaculture Perspective, with View from a Pedal Buggy </a>
+				<p class = "time"> 4/7 <!-- at 7pm --> </p>
+				<div class = "film"> 
+					<a href = ""> <span class = "rob-bold"> 7pm /  </span> <span class = "film-title">Inhabit: A Permaculture Perspective</span>, <span class = "with"> with </span>  <span class = "film-title">View from a Pedal Buggy</span> </a> 
+					<div class = "checkbox" id = "inhabit"> </div> 
+				</div>
 				<!-- <p class = "location"> Loria Center for the History of Art, Room 250, 190 York Street </p> -->
 			</div>
 			<div class = "row">
-				<p class = "time"> Wednesday, April 8 / 7pm </p>
-				<a class = "film" href = ""> Black Ice, with Polar Bear Man </a>
+				<p class = "time"> 4/8 <!-- at 7pm --> </p>
+				<div class = "film"> 
+					<a href = ""> <span class = "rob-bold"> 7pm / </span> <span class = "film-title">Black Ice</span>, <span class = "with"> with </span>  <span class = "film-title">Polar Bear Man</span> </a> 		
+					<div class = "checkbox" id = "black-ice"> </div> 
+				</div>
+					
 				<!-- <p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>
 			<div class = "row">
-				<p class = "time"> Thursday, April 9 / 7pm </p>
-				<a class = "film" href = ""> Divide in Concord, with Dry Season </a>
+				<p class = "time"> 4/9 <!-- at 7pm --> </p>
+				<div class = "film"> 
+					<a href = ""> <span class = "rob-bold"> 7pm /  </span> <span class = "film-title">Divide in Concord</span>, <span class = "with"> with </span>  <span class = "film-title">Dry Season</span> </a> 	
+					<div class = "checkbox" id = "divide"> </div> 
+				</div>
+		
 				<!-- <p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>
 			<div class = "row">
-				<p class = "time"> Friday, April 10 / 8pm </p>
-				<a class = "film" href = ""> Monsoon, with The Oceanmaker </a> 
+				<p class = "time"> 4/10 <!-- at 8pm --> </p>
+				<div class = "film"> 
+					<a href = ""><span class = "rob-bold"> 8pm /  </span> <span class = "film-title">Monsoon</span>, <span class = "with"> with </span>  <span class = "film-title">The Oceanmaker</span> </a> 
+					<div class = "checkbox" id = "monsoon"> </div> 
+				</div>
+							
 				<!-- <p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>
 			<div class = "row">
-				<p class = "time"> Saturday, April 11 / 4pm </p>
-				<a class = "film" href = ""> Umi Yama Aida, with Brilliant Darkenss: Hotaru in the Night </a> 
+				<p class = "time"> 4/11 <!-- at 4pm --> </p>
+				<div class = "film"> 
+					<a href = ""><span class = "rob-bold"> 4pm /  </span> <span class = "film-title">Umi Yama Aida</span>, <span class = "with"> with </span>  <span class = "film-title">Brilliant Darkness: Hotaru in the Night</span> </a> 	
+					<div class = "checkbox" id = "umi"> </div> 
+				</div>
+						
+				<div class = "second film"> 
+					<a href = ""> <span class = "rob-bold"> 8pm /  </span> <span class = "film-title">Just Eat It: A Food Waste Story</span>, <span class = "with"> with </span>  <span class = "film-title">Man in the Maze</span> </a> 
+					<div class = "checkbox" id = "just-eat"> </div> 
+				</div> 
+
 				<!-- <p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
 			</div>
-			<div class = "row">
-				<p class = "time"> Saturday, April 11 / 8pm </p>
-				<a class = "film" href = ""> Just Eat It: A Food Waste Story, with Man in the Maze </a>
-				<!-- <p class = "location"> Whitney Humanities Center, Auditorium, 53 Wall Street </p> -->
-			</div>
+
 			
 			
 			
@@ -115,8 +147,10 @@
 
 	</div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type = "text/javascript" src = "EFFY script.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </body> 
 
 </html>
