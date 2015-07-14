@@ -61,6 +61,12 @@ $(document).ready(function(){
 	// Fade in individual film pages 
 	$('.film-main').fadeIn(300, 'easeInQuint');
 
+	//Fade in my list 
+	$('.list').fadeIn(500);
+	$('.x').fadeIn(500);
+
+
+
 
 
 	// Checkbox animation 
@@ -105,7 +111,7 @@ $(document).ready(function(){
 
 
 	//Fade out film homepage on redirect 
-	$('.film a').click(function() {
+	$('.films-homepage a').click(function() {
 		var href = $(this).attr('href');
 		$('.wrapper').delay(200).fadeOut(1000, function() {
 			window.location = href;
@@ -124,15 +130,30 @@ $(document).ready(function(){
 	});
 	
 
-	//Exit out of film page
-	$('.x').click(function() {
+	//Exit buttons 
+	$('.film-page .x').click(function() {
 		var href = $(this).attr('href');
+
 		$('.film-main').delay(200).fadeOut(1000, function() {
 			window.location = href;
 		})
 		return false;
 	});
 
+	$('.my-list .x').click(function() {
+		$('.list').delay(200).fadeOut(1000, function() {
+			window.history.back();
+		})
+		return false;	
+		
+	});
+
+
+
+	
+
+
+	
 
 
 	

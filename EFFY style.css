@@ -378,9 +378,10 @@ nav .white:hover, .my-list-link:hover {
 
 
 .films-homepage .checkbox {
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
 	border: 2px solid black;
+/*	border-radius: 50%;*/
 	display: inline-block;
 	margin-left: 15px;
 	font-family: "Roboto",sans-serif;
@@ -388,16 +389,12 @@ nav .white:hover, .my-list-link:hover {
 	line-height: 8.5px;
 	font-weight: 700;
 	text-align: center;
-	opacity: 0;
 	cursor: pointer;
-	-webkit-transition: background-color .5s, opacity .5s;
-    transition: background-color .5s, opacity .5s;
+	-webkit-transition: background-color .1s;
+    transition: background-color .1s;
   
 }
 
-.row .film:hover > .checkbox {
-	opacity: 1;
-}
 
 .checkbox-info-pop-up {
 	font-family: "Lato", sans-serif;
@@ -483,7 +480,7 @@ nav .white:hover, .my-list-link:hover {
 	color: rgba(0,0,0, .8);
 }
 
-.section-title, .films-list, .small-logo {
+.section-title, .films-list, .small-logo, .list {
 	display: none;
 }
 
