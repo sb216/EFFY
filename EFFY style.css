@@ -14,6 +14,7 @@
 
 body {
 	font-family: "Oswald", sans-serif;
+
 }
 
 
@@ -67,8 +68,6 @@ body {
 /*	background-color: #1DDE73;*/
 	/*font-family: "VT323", sans-serif;
 	font-family: "Dosis", sans-serif;*/
-
-
 }
 
 .wrapper {
@@ -81,11 +80,10 @@ body {
 
 
 header {
-	width: 1200px;
-	height: 30px;
-	position: relative;
-	margin: 0px auto;
-	top: 20px;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+
 
 
 	text-transform: none;
@@ -93,7 +91,46 @@ header {
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: .5px;
+	background-color: #00E68A;
+	z-index: 200;
 }
+
+@keyframes shiftToWhite {
+	from {background-color: #00E68A;}
+	to {background-color: #e0e0e0}
+}
+
+@-moz-keyframes shiftToWhite {
+	from {background-color: #00E68A;}
+	to {background-color: #e0e0e0}
+}
+
+@-webkit-keyframes shiftToWhite {
+	from {background-color: #00E68A;}
+	to {background-color: #e0e0e0}
+}
+
+@keyframes shiftToMain {
+	from {background-color: #e0e0e0;}
+	to {background-color: #00E68A}
+}
+
+@-webkit-keyframes shiftToMain {
+	from {background-color: #e0e0e0;}
+	to {background-color: #00E68A}
+}
+
+
+@-moz-keyframes shiftToMain {
+	from {background-color: #e0e0e0;}
+	to {background-color: #00E68A}
+}
+
+
+
+
+
+
 
 .main-links a{
 	position: relative;
@@ -107,8 +144,8 @@ header {
 
 .festival-dates {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 35px;
+	top: 20px;
 /*	width: 215px;*/
 	text-align: right;
 /*	opacity: .8;*/
@@ -118,12 +155,12 @@ header {
 
 nav {
 	text-transform: none;
-	width: 490px;
+	width: 410px;
 	position: relative;
-	top: 0px;
+	top: 20px;
 	margin: 0px auto;
 /*	border-left: 2px solid black;*/
-	text-align: left;
+	text-align: center;
 	font-family: "Roboto Condensed", sans-serif;
 
 }
@@ -131,6 +168,8 @@ nav {
 nav ul {
 /*	line-height: 0px;*/
 	overflow: hidden;
+	width: 410px;
+
 }
 
 
@@ -146,6 +185,10 @@ nav li {
 
 }
 
+nav li:first-child {
+	margin-left: 0px;
+}
+
 
 nav a {
 /*	opacity: .5;*/
@@ -159,8 +202,8 @@ nav a {
 
 .my-list-link {
 	position: absolute;
-	right: 0px;
-	top: 0px;
+	right: 35px;
+	top: 20px;
 	font-weight: 400;
 	cursor: pointer;
 	letter-spacing: 1.5px;
@@ -261,13 +304,28 @@ nav .white:hover, .my-list-link:hover {
 /*****************STYLING FOR FILMS HOMEPAGE******************/
 /***************************************************************/
 
-.films-homepage {
-	/*background: #EEEEEE;*/
-		overflow: hidden;
+.films-events-homepage {
+/*	background-color: #00E68A;*/
+	overflow-x: hidden;
 }
 
+.films-events-homepage #film, .films-events-homepage #event, .films-events-homepage #my-list {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	margin: 0px auto;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.films-events-homepage #my-list {
+	margin-bottom: 0px;
+}
+
+
+
 .small-logo {
-	position: absolute;
+	position: fixed;
 	left: 40px;
 	bottom: 30px;
 	width: 105px;
@@ -280,7 +338,7 @@ nav .white:hover, .my-list-link:hover {
 	line-height: 45px;
 	font-weight: 700;
 	letter-spacing: -4px;
-	position: absolute;
+	position: fixed;
 	color: black;
 }
 
@@ -302,7 +360,7 @@ nav .white:hover, .my-list-link:hover {
 }
 
 
-.films-list {
+.films-list, .events-list {
 	width: 800px;
 	height: 490px;
 
@@ -377,7 +435,7 @@ nav .white:hover, .my-list-link:hover {
 
 
 
-.films-homepage .checkbox {
+.films-events-homepage .checkbox {
 	width: 12px;
 	height: 12px;
 	border: 2px solid black;
@@ -465,7 +523,7 @@ nav .white:hover, .my-list-link:hover {
 
 .section-title {
 	position: absolute;
-	left: 198px;
+	right: 850px;
 	font-size: 100px;
 	line-height: 100px;
 	letter-spacing: 0px;
@@ -512,10 +570,10 @@ nav .white:hover, .my-list-link:hover {
 
 #deeptime-body .film-main {
 	width: 1200px;
-	height: 617px;
+	height: 600px;
 	position: relative;
 	margin: 0px auto;
-	top: 25px;
+	top: 30px;
 	background: url("deeptime.png");
 	background-repeat: no-repeat;
     background-position: center bottom; 
@@ -684,11 +742,12 @@ aside, aside a {
 /***************************************************************/
 
 
-.my-list .wrapper {
-	background-color: #EEEEEE;
+#my-list {
+/*	background-color: #EEEEEE;*/
+
 }
 
-.my-list .section-title {
+#my-list .section-title {
 	color: #00E68A;
 }
 
@@ -699,17 +758,60 @@ aside, aside a {
 }
 
 .list {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	text-transform: none;
 	position: relative;
-	width: 500px;
-	height: 500px;
+	width: 1050px;
+	height: 400px;
 	margin: 0px auto;
-	text-align: center;
-	top: 30px;
+	text-align: left;
+	top: 150px;
 }
 
-.list h2 {
-	font-size: 40px;
+#my-list h2 {
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	top: 100px;
 }
+
+.list ul {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 30px;
+/*	border-bottom: 2px solid black;*/
+	
+}
+
+.list li {
+	float: left;
+}
+
+.list li:nth-child(1) {
+	width: 12%;
+}
+
+.list li:nth-child(2) {
+	width: 5%;
+}
+
+.list li:nth-child(3) {
+	width: 43%;
+	font-weight: 700;
+
+}
+
+
+.list li:nth-child(4) {
+	width: 40%;
+	text-align: right;
+}
+
+
+
+
+
 
 
 
